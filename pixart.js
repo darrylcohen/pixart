@@ -11,3 +11,9 @@ $("#color-field").keydown(function (e) {
     $('.brush').css("background-color", $colour);
   }
 });
+
+for(var i = 0; i < 1000; i++) {
+  var $square = $('<div>')
+  $square.addClass('square')
+  $('body').append($square)
+}

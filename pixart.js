@@ -12,11 +12,12 @@ $("#color-field").keydown(function (e) {
   }
 });
 
+$colour = $('#color-field').val()
 for(var i = 0; i < 1000; i++) {
   var $square = $('<div>')
   $square.addClass('square')
   $square.on('click', function(event){
-    $(event.target).css("background-color", 'green');
+    $(event.target).css("background-color", $colour);
   })
   $('body').append($square)
 }
